@@ -1,30 +1,43 @@
 import React from "react";
+import { FaPhone, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Contact() {
     return (
-        <div className="mt-8">
-            <h2 className="text-xl font-semibold mb-3">Contact & Links</h2>
-            <ul className="text-gray-700 space-y-1">
-                <li><strong>Phone:</strong> 0742600965</li>
-                <li><strong>Email:</strong> abednegokaume@gmail.com</li>
-                <li>
-                    <strong>LinkedIn:</strong>{" "}
+        <div>
+            <h2 className="text-xs font-bold text-gray-400 uppercase tracking-widest font-display border-b border-gray-900 pb-2 mb-4">
+                Links & Contact
+            </h2>
+            <ul className="space-y-2.5 text-xs">
+                <li className="flex items-center gap-2">
+                    <FaPhone className="text-gray-500 w-3.5 h-3.5" />
+                    <span className="text-gray-400 font-medium">0742600965</span>
+                </li>
+                <li className="flex items-center gap-2">
+                    <FaEnvelope className="text-gray-500 w-3.5 h-3.5" />
+                    <a href="mailto:abednegokaume@gmail.com" className="text-gray-400 hover:text-blue-400 transition-colors">
+                        abednegokaume@gmail.com
+                    </a>
+                </li>
+                <li className="flex items-center gap-2">
+                    <FaLinkedin className="text-gray-500 w-3.5 h-3.5" />
                     <a
                         href="https://www.linkedin.com/in/kaume-abednego-937469362"
                         target="_blank"
-                        className="text-blue-600 hover:underline"
+                        rel="noopener noreferrer"
+                        className="text-gray-400 hover:text-blue-400 transition-colors"
                     >
-                        Kaume Abednego
+                        linkedin.com/in/kaume-abednego
                     </a>
                 </li>
-                <li>
-                    <strong>GitHub:</strong>{" "}
+                <li className="flex items-center gap-2">
+                    <FaGithub className="text-gray-500 w-3.5 h-3.5" />
                     <a
                         href="https://github.com/Abednego254"
                         target="_blank"
-                        className="text-blue-600 hover:underline"
+                        rel="noopener noreferrer"
+                        className="text-gray-400 hover:text-blue-400 transition-colors"
                     >
-                        Abednego254
+                        github.com/Abednego254
                     </a>
                 </li>
             </ul>

@@ -3,23 +3,28 @@ import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
 
 function Header() {
     return (
-        <div>
-            <h1 className="text-4xl font-bold text-gray-900">ABEDNEGO KAUME</h1>
+        <div className="border-b border-gray-900 pb-6">
+            <h1 className="text-4xl font-extrabold tracking-tight font-display gradient-text">
+                ABEDNEGO KAUME
+            </h1>
+            <p className="text-blue-400 font-semibold text-sm mt-2 uppercase tracking-wider font-display">
+                Oracle Certified Associate (OCA) Java SE 8 Programmer & Software Developer
+            </p>
 
-            <div className="mt-3 space-y-2 text-gray-700">
-                <p className="flex items-center gap-2">
-                    <FaMapMarkerAlt className="text-blue-600" />
-                    805, NYAHURURU, 20300 (KE)
+            <div className="mt-4 flex flex-wrap gap-4 text-xs text-gray-400">
+                <p className="flex items-center gap-1.5 bg-gray-900/50 border border-gray-800/80 px-3 py-1.5 rounded-lg">
+                    <FaMapMarkerAlt className="text-blue-400" />
+                    <span>Roysambu, Nairobi, Kenya</span>
                 </p>
 
-                <p className="flex items-center gap-2">
-                    <FaEnvelope className="text-blue-600" />
-                    abednegokaume@gmail.com
+                <p className="flex items-center gap-1.5 bg-gray-900/50 border border-gray-800/80 px-3 py-1.5 rounded-lg">
+                    <FaEnvelope className="text-purple-400" />
+                    <span>abednegokaume@gmail.com</span>
                 </p>
 
-                <p className="flex items-center gap-2">
-                    <FaPhone className="text-blue-600" />
-                    0742600965
+                <p className="flex items-center gap-1.5 bg-gray-900/50 border border-gray-800/80 px-3 py-1.5 rounded-lg">
+                    <FaPhone className="text-pink-400" />
+                    <span>+254 742 600 965</span>
                 </p>
             </div>
         </div>
